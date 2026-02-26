@@ -38,7 +38,7 @@ function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
 
     return (
         <section id="form-container">
-            <h2>Paramètres</h2>
+            <h2>Données du formulaire</h2>
             <label>Poids Min </label>
             <input type="number" name="poidsMin" value={data.poidsMin} onChange={handleChange}/>
             
@@ -49,7 +49,7 @@ function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
             <input type="number" name="nbLignes" value={data.nbLignes} onChange={handleChange} />
             
             <div id="objectif-container">
-                <h2>Objectifs</h2>
+                <h2>Vos Objectifs</h2>
                 {objectifs.map((objectif) => (
                     <label key={objectif.id} style={{ marginRight: "10px" }}>
                         <input 
